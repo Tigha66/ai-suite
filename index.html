@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Web Solutions - Complete AI Suite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); }
+    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); }
+    .glow { box-shadow: 0 0 60px rgba(139, 92, 246, 0.3); }
+    .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+    .pulse-ring { animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; }
+    @keyframes pulse-ring { 0% { transform: scale(0.8); opacity: 1; } 100% { transform: scale(2); opacity: 0; } }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-white">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+          <span class="text-xl">🤖</span>
+        </div>
+        <span class="text-xl font-bold">AI Web Solutions</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#services" class="text-white/70 hover:text-white transition">Services</a>
+        <a href="#pricing" class="text-white/70 hover:text-white transition">Pricing</a>
+        <a href="#contact" class="text-white/70 hover:text-white transition">Contact</a>
+        <a href="#contact" class="px-5 py-2 bg-purple-600 rounded-full font-medium hover:bg-purple-500 transition">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm mb-8">
+        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+        Now serving businesses across London
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Your Complete<br>
+        <span class="gradient-text">AI Business Suite</span>
+      </h1>
+      
+      <p class="text-xl text-white/70 max-w-2xl mx-auto mb-10">
+        Three powerful AI employees working 24/7 to grow your business. 
+        Email automation, voice receptionist, and intelligent chatbot - all in one.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-lg hover:scale-105 transition glow">
+          Start Free Trial
+        </a>
+        <a href="#services" class="px-8 py-4 glass rounded-full font-semibold text-lg hover:bg-white/10 transition">
+          See How It Works
+        </a>
+      </div>
+
+      <!-- Hero Images -->
+      <div class="mt-20 flex justify-center items-end gap-4">
+        <div class="w-64 h-40 glass rounded-2xl flex items-center justify-center float" style="animation-delay: 0s;">
+          <div class="text-center">
+            <div class="text-4xl mb-2">📧</div>
+            <div class="text-purple-400 font-semibold">AI Email</div>
+          </div>
+        </div>
+        <div class="w-64 h-40 glass rounded-2xl flex items-center justify-center float" style="animation-delay: 1s;">
+          <div class="text-center">
+            <div class="text-4xl mb-2">📞</div>
+            <div class="text-pink-400 font-semibold">AI Voice</div>
+          </div>
+        </div>
+        <div class="w-64 h-40 glass rounded-2xl flex items-center justify-center float" style="animation-delay: 2s;">
+          <div class="text-center">
+            <div class="text-4xl mb-2">💬</div>
+            <div class="text-cyan-400 font-semibold">AI Chat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Three AI Employees.<br>Endless Possibilities.</h2>
+        <p class="text-white/60">Choose one or get all three</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- AI Email -->
+        <div class="glass rounded-3xl p-8 hover:scale-105 transition duration-300">
+          <div class="w-16 h-16 rounded-2xl bg-blue-500/20 flex items-center justify-center text-3xl mb-6">📧</div>
+          <h3 class="text-2xl font-bold mb-4">AI Email Assistant</h3>
+          <p class="text-white/60 mb-6">Never miss a lead again. AI responds to every email within 2 minutes.</p>
+          <ul class="space-y-3 text-white/80">
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Instant response to enquiries</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Auto-schedule appointments</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Follow-up automation</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> CRM integration</li>
+          </ul>
+        </div>
+
+        <!-- AI Voice -->
+        <div class="glass rounded-3xl p-8 hover:scale-105 transition duration-300 border-2 border-pink-500/50">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-pink-500 rounded-full text-sm font-medium">Most Popular</div>
+          <div class="w-16 h-16 rounded-2xl bg-pink-500/20 flex items-center justify-center text-3xl mb-6 relative">
+            📞
+            <div class="absolute inset-0 rounded-2xl border-2 border-pink-500 pulse-ring"></div>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">AI Voice Receptionist</h3>
+          <p class="text-white/60 mb-6">Never miss a call. AI answers 24/7 and qualifies your leads.</p>
+          <ul class="space-y-3 text-white/80">
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Answers calls 24/7</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Natural voice conversations</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Books appointments</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Transfers to you when ready</li>
+          </ul>
+        </div>
+
+        <!-- AI Chat -->
+        <div class="glass rounded-3xl p-8 hover:scale-105 transition duration-300">
+          <div class="w-16 h-16 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-3xl mb-6">💬</div>
+          <h3 class="text-2xl font-bold mb-4">AI Chatbot</h3>
+          <p class="text-white/60 mb-6">Convert website visitors into leads with intelligent conversations.</p>
+          <ul class="space-y-3 text-white/80">
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> 24/7 website chat</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Qualifies leads</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Books demos</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Multi-language</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section class="py-20 px-6 bg-black/20">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">See It In Action</h2>
+        <p class="text-white/60">Watch how AI transforms your business</p>
+      </div>
+
+      <!-- Voice Demo -->
+      <div class="max-w-4xl mx-auto glass rounded-3xl p-8 md:p-12">
+        <div class="text-center mb-8">
+          <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center text-4xl mb-4 relative">
+            📞
+            <div class="absolute inset-0 rounded-full border-4 border-pink-500 animate-ping opacity-20"></div>
+          </div>
+          <h3 class="text-2xl font-bold">AI Voice Receptionist</h3>
+          <p class="text-white/60">Phone call demo</p>
+        </div>
+
+        <div class="bg-black/40 rounded-2xl p-6 font-mono text-sm text-green-400 mb-6">
+          <p>🤖: "Hello, thank you for calling. How can I help you today?"</p>
+          <p class="mt-2">👤: "Hi, I'm looking for information about your services."</p>
+          <p class="mt-2">🤖: "Great! I'd be happy to help. Are you interested in residential or commercial property?"</p>
+          <p class="mt-2">👤: "Residential."</p>
+          <p class="mt-2">🤖: "Perfect. Let me book you with our specialist. What time works best this week?"</p>
+        </div>
+
+        <div class="flex justify-center">
+          <button class="px-6 py-3 bg-pink-500 rounded-full font-medium hover:bg-pink-400 transition">
+            🎤 Try Voice Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+        <p class="text-white/60">Choose the package that fits your business</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Starter -->
+        <div class="glass rounded-3xl p-8">
+          <h3 class="text-xl font-semibold mb-2">AI Email</h3>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">£297</span>
+            <span class="text-white/60">/month</span>
+          </div>
+          <p class="text-white/60 mb-6">Perfect for small businesses</p>
+          <ul class="space-y-3 text-white/80 mb-8">
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Email automation</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Lead response</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Scheduling</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Basic CRM</li>
+          </ul>
+          <a href="#contact" class="block text-center py-3 border border-purple-500 rounded-full font-medium hover:bg-purple-500 transition">
+            Get Started
+          </a>
+        </div>
+
+        <!-- Growth -->
+        <div class="glass rounded-3xl p-8 border-2 border-purple-500 glow">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-purple-500 rounded-full text-sm font-medium">Best Value</div>
+          <h3 class="text-xl font-semibold mb-2">AI Suite</h3>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">£497</span>
+            <span class="text-white/60">/month</span>
+          </div>
+          <p class="text-white/60 mb-6">Most popular choice</p>
+          <ul class="space-y-3 text-white/80 mb-8">
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Email automation</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Voice receptionist</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Chatbot</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Full CRM</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Analytics</li>
+          </ul>
+          <a href="#contact" class="block text-center py-3 bg-purple-600 rounded-full font-medium hover:bg-purple-500 transition">
+            Get Started
+          </a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="glass rounded-3xl p-8">
+          <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">£997</span>
+            <span class="text-white/60">/month</span>
+          </div>
+          <p class="text-white/60 mb-6">For larger businesses</p>
+          <ul class="space-y-3 text-white/80 mb-8">
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Everything in Suite</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Multiple AI agents</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Custom training</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Priority support</li>
+            <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Dedicated manager</li>
+          </ul>
+          <a href="#contact" class="block text-center py-3 border border-pink-500 rounded-full font-medium hover:bg-pink-500 transition">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-white/60 mb-4">One-time setup fee: £997 (waived for first 3 clients)</p>
+        <p class="text-green-400 font-medium">🎁 30-Day Money-Back Guarantee</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6">
+    <div class="max-w-2xl mx-auto glass rounded-3xl p-8 md:p-12">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+        <p class="text-white/60">Book your free consultation call</p>
+      </div>
+
+      <form class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm text-white/60 mb-2">Name</label>
+            <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-purple-500" placeholder="Your name">
+          </div>
+          <div>
+            <label class="block text-sm text-white/60 mb-2">Company</label>
+            <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-purple-500" placeholder="Company name">
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm text-white/60 mb-2">Email</label>
+          <input type="email" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-purple-500" placeholder="you@company.com">
+        </div>
+        <div>
+          <label class="block text-sm text-white/60 mb-2">Which services are you interested in?</label>
+          <div class="grid grid-cols-3 gap-4">
+            <label class="flex items-center gap-2 p-3 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10">
+              <input type="checkbox" class="w-4 h-4">
+              <span>📧 Email AI</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10">
+              <input type="checkbox" class="w-4 h-4">
+              <span>📞 Voice AI</span>
+            </label>
+            <label class="flex items-center gap-2 p-3 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10">
+              <input type="checkbox" class="w-4 h-4">
+              <span>💬 Chat AI</span>
+            </label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm text-white/60 mb-2">Message</label>
+          <textarea rows="4" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-purple-500" placeholder="Tell us about your business..."></textarea>
+        </div>
+        <button type="submit" class="w-full py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl font-semibold hover:scale-[1.02] transition">
+          Book Free Consultation
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+          <span>🤖</span>
+        </div>
+        <span class="font-semibold">AI Web Solutions</span>
+      </div>
+      <p class="text-white/60 text-sm">© 2026 AI Web Solutions. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="mailto:tigha66@gmail.com" class="text-white/60 hover:text-white transition">tigha66@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
